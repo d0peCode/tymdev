@@ -14,6 +14,14 @@
       border-radius: 20px;
       background-color: #7f92f1;
       filter: drop-shadow(1px 4px 3px rgba(0,0,0,.2));
+      transition: .5s filter, .2s transform;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: subpixel-antialiased;
+
+      &:hover {
+        filter: drop-shadow(1px 4px 3px rgba(0,0,0, .5));
+        transform: scale(1.048);
+      }
 
       & a {
         text-decoration: none;
