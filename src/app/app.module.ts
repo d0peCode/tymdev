@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BgTopComponent } from './bg-top/bg-top.component';
 import { SkillsComponent } from './skills/skills.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ComponentComponent } from './component/component.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';;
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { ContactComponent } from './contact/contact.component';
     BgTopComponent,
     SkillsComponent,
     PortfolioComponent,
-    ComponentComponent,
     ContactComponent
   ],
   imports: [
