@@ -1,0 +1,17 @@
+.portfolio {
+  width: 80%;
+  min-height: 100vh;
+  margin: 30vh auto;
+
+
+  &__header {
+    max-width: 500px;
+
+    &-paragraph {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+      font-size: 16px;
+      color: #313131;
+    }
+  }
+}
