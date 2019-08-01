@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NavComponent } from './nav/nav.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { LogoComponent } from './logo/logo.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LogoComponent } from './logo/logo.component';
     ContactComponent,
     NavComponent,
     GreetingComponent,
-    LogoComponent
+    LogoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
