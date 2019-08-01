@@ -1,6 +1,18 @@
 <main class="portfolio" role="main">
     <header class="portfolio__header">
         <h2 class="heading heading--primary">Portfolio</h2>
-        <p class="portfolio__header-paragraph">Poniżej przedstawione są moje wybrane projekty. Niektóre projekty posiadają link do kodu na GitHubie jednakże większość z nich są projektami komercyjnymi, wykonanymi dla klientów dlatego nie mogę udostępnić ich kodu źródłowego. Użyj strzałek aby przewinąć.</p>
+        <p class="portfolio__header-paragraph">Poniżej przedstawione są moje wybrane projekty. Niektóre projekty posiadają link do kodu na GitHubie jednakże większość z nich są projektami komercyjnymi, wykonanymi dla klientów dlatego nie mogę udostępnić ich kodu źródłowego. Przeciągnij aby przewinąć.</p>
     </header>
+    <section class="nav">
+        <div class="swiper-wrapper">
+            <article class="swiper-slide" *ngFor="let item of slides; let i = index">
+                <div class="portfolio__image"></div>
+                <div class="portfolio__content">
+                    <h3 [attr.data-index]="'0' + i" class="heading heading--secondary">{{ item.name }}</h3>
+                    <p class="portfolio__content-paragraph">{{ item.description }}</p>
+                    <img *ngFor="let n of item.icons" [src]="n" alt="" class="portfolio__content-icon">
+                </div>
+            </article>
+        </div>
+    </section>
 </main>
