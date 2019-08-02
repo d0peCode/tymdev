@@ -14,7 +14,7 @@ export class PortfolioComponent implements OnInit {
             name: 'QuickMargo',
             image: 'https://res.cloudinary.com/drngyvbmc/image/upload/v1564667988/th.jpg',
             icons: ['https://res.cloudinary.com/drngyvbmc/image/upload/v1564679586/node.png', 'https://res.cloudinary.com/drngyvbmc/image/upload/v1564679586/express.png', 'https://res.cloudinary.com/drngyvbmc/image/upload/v1564679586/puppeteer.png', 'https://res.cloudinary.com/drngyvbmc/image/upload/v1564679586/electron.png', 'https://res.cloudinary.com/drngyvbmc/image/upload/v1564679586/vue.png', 'https://res.cloudinary.com/drngyvbmc/image/upload/v1564679586/ionic.jpg', 'https://res.cloudinary.com/drngyvbmc/image/upload/v1564679585/angular.png'],
-            description: 'Mój najbardziej skomplikowany projekt. Jest to bot w pełni automatyzujący największą polską dynamiczną przeglądarkową grę RPG. Bot automatyzuje wszystkie obszary gry oraz pozwala się zarządzać z poziomu telefonu. Składa się z trzech aplikacji - mobilnej, desktopowej i webowej oraz backendu, który umożliwia współpracę między nimi. Do stworzenia projektu skorzystałem z takich technologii jak NodeJS, Express, Socket.io, Vue2JS, Electron, Ionic, Angular.'
+            description: 'Mój najbardziej skomplikowany projekt. Jest to bot w pełni automatyzujący największą polską dynamiczną przeglądarkową grę RPG. Bot automatyzuje wszystkie obszary gry oraz pozwala się zarządzać z poziomu telefonu. Składa się z trzech aplikacji - mobilnej, desktopowej i webowej oraz backendu, który umożliwia współpracę między nimi. Do stworzenia projektu skorzystałem z takich technologii jak NodeJS, Express, Puppeteer, Socket.io, Vue2JS, Electron, Ionic, Angular.'
         },
         {
             name: 'TwoHouse',
@@ -54,13 +54,6 @@ export class PortfolioComponent implements OnInit {
             slidesPerView: 1
         });
 
-        this.mySwiper.on('touchStart', () => {
-            this.touchService.triggerTouchStart();
-        });
-        this.mySwiper.on('touchEnd', () => {
-            this.touchService.triggerTouchStop();
-            this.selectedAppService.changeSelected(3);
-        });
     }
 
     ngOnInit() {

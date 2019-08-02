@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { BgTopComponent } from './bg-top/bg-top.component';
-import { SkillsComponent } from './skills/skills.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';;
-import { ContactComponent } from './contact/contact.component';
-import { NavComponent } from './nav/nav.component';
-import { GreetingComponent } from './greeting/greeting.component';
-import { LogoComponent } from './logo/logo.component';
-import { FooterComponent } from './footer/footer.component';
+
+// light mode
+import { BgTopComponent } from './light-mode/top/bg-top/bg-top.component';
+import { SkillsComponent } from './light-mode/skills/skills.component';
+import { PortfolioComponent } from './light-mode/portfolio/portfolio.component';
+import { ContactComponent } from './light-mode/contact/contact.component';
+import { NavComponent } from './light-mode/top/nav/nav.component';
+import { GreetingComponent } from './light-mode/top/greeting/greeting.component';
+import { LogoComponent } from './light-mode/top/logo/logo.component';
+import { FooterComponent } from './light-mode/footer/footer.component';
+import { TopComponent } from './light-mode/top/top.component';
+import { LightModeComponent } from './light-mode/light-mode.component';
+import { DarkModeComponent } from './dark-mode/dark-mode.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +30,16 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     GreetingComponent,
     LogoComponent,
-    FooterComponent
+    FooterComponent,
+    TopComponent,
+    LightModeComponent,
+    DarkModeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
