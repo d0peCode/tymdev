@@ -4,20 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app.component';
 
 // light mode
-import { BgTopComponent } from './light-mode/top/bg-top/bg-top.component';
-import { SkillsComponent } from './light-mode/skills/skills.component';
-import { PortfolioComponent } from './light-mode/portfolio/portfolio.component';
-import { ContactComponent } from './light-mode/contact/contact.component';
-import { NavComponent } from './light-mode/top/nav/nav.component';
-import { GreetingComponent } from './light-mode/top/greeting/greeting.component';
-import { LogoComponent } from './light-mode/top/logo/logo.component';
-import { FooterComponent } from './light-mode/footer/footer.component';
-import { TopComponent } from './light-mode/top/top.component';
-import { LightModeComponent } from './light-mode/light-mode.component';
-import { DarkModeComponent } from './dark-mode/dark-mode.component';
+import { BgTopComponent } from './components/light-mode/top/bg-top/bg-top.component';
+import { SkillsComponent } from './components/light-mode/skills/skills.component';
+import { PortfolioComponent } from './components/light-mode/portfolio/portfolio.component';
+import { ContactComponent } from './components/light-mode/contact/contact.component';
+import { NavComponent } from './components/light-mode/top/nav/nav.component';
+import { GreetingComponent } from './components/light-mode/top/greeting/greeting.component';
+import { LogoComponent } from './components/light-mode/top/logo/logo.component';
+import { FooterComponent } from './components/light-mode/footer/footer.component';
+import { TopComponent } from './components/light-mode/top/top.component';
+import { LightModeComponent } from './components/light-mode/light-mode.component';
+import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
 
 
 @NgModule({
