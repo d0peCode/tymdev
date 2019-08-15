@@ -1,0 +1,9 @@
+<div class="modes">
+    <img src="../../../../../../assets/icons/sun.png" alt="Light Mode">
+    <label class="switch">
+        <input type="checkbox" [(ngModel)]="mode" (change)="modeChanged()">
+        <span class="slider round"></span>
+    </label>
+    {{ mode }}
+    <img src="../../../../../../assets/icons/moon.png" alt="Dark Mode">
+</div>

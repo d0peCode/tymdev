@@ -18,6 +18,9 @@ import { FooterComponent } from './components/light-mode/footer/footer.component
 import { TopComponent } from './components/light-mode/top/top.component';
 import { LightModeComponent } from './components/light-mode/light-mode.component';
 import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
+import { ToolsComponent } from './components/light-mode/top/tools/tools.component';
+import { FlagsComponent } from './components/light-mode/top/tools/flags/flags.component';
+import { ModesComponent } from './components/light-mode/top/tools/modes/modes.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
     FooterComponent,
     TopComponent,
     LightModeComponent,
-    DarkModeComponent
+    DarkModeComponent,
+    ToolsComponent,
+    FlagsComponent,
+    ModesComponent
   ],
   imports: [
     BrowserModule,
