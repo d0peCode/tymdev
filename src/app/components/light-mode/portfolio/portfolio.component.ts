@@ -49,7 +49,11 @@ export class PortfolioComponent implements OnInit {
     constructor() {}
 
     ngAfterViewInit() {
+<<<<<<< HEAD
         this.mySwiper = new Swiper('.nav', {
+=======
+        this.mySwiper = new Swiper('.dark-nav', {
+>>>>>>> dark-mode
             paginationClickable: false,
             grabCursor: true,
             loop: true,

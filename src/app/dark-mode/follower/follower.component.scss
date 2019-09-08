@@ -1,0 +1,16 @@
+.follower {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+
+    &__big {
+        width: 60px;
+        height: 60px;
+    }
+}

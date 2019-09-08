@@ -1,0 +1,12 @@
+<!-- Swiper -->
+<nav class="nav">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide"
+            *ngFor="let item of slides; let i = index">
+            <span [attr.data-index]="'0' + i">{{ item }}</span>
+        </li>
+    </ul>
+</nav>
+<div style="color: white; font-size: 77px; z-index: 9999">
+    <button (click)="showIndex()">Show Index</button>
+</div>
