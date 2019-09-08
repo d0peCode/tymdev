@@ -7,22 +7,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app.component';
 
 // light mode
-import { BgTopComponent } from './light-mode/top/bg-top/bg-top.component';
-import { SkillsComponent } from './light-mode/skills/skills.component';
-import { PortfolioComponent } from './light-mode/portfolio/portfolio.component';
-import { ContactComponent } from './light-mode/contact/contact.component';
-import { LightNavComponent } from './light-mode/top/nav/nav.component';
-import { GreetingComponent } from './light-mode/top/greeting/greeting.component';
-import { LogoComponent } from './light-mode/top/logo/logo.component';
-import { FooterComponent } from './light-mode/footer/footer.component';
-import { TopComponent } from './light-mode/top/top.component';
-import { LightModeComponent } from './light-mode/light-mode.component';
-import { DarkModeComponent } from './dark-mode/dark-mode.component';
+import { BgTopComponent } from './components/light-mode/top/bg-top/bg-top.component';
+import { SkillsComponent } from './components/light-mode/skills/skills.component';
+import { PortfolioComponent } from './components/light-mode/portfolio/portfolio.component';
+import { ContactComponent } from './components/light-mode/contact/contact.component';
+import { LightNavComponent } from './components/light-mode/top/light-nav/light-nav.component';
+import { GreetingComponent } from './components/light-mode/top/greeting/greeting.component';
+import { LogoComponent } from './components/light-mode/top/logo/logo.component';
+import { FooterComponent } from './components/light-mode/footer/footer.component';
+import { TopComponent } from './components/light-mode/top/top.component';
+import { LightModeComponent } from './components/light-mode/light-mode.component';
+import { ToolsComponent } from './components/light-mode/top/tools/tools.component';
+import { FlagsComponent } from './components/light-mode/top/tools/flags/flags.component';
+import { ModesComponent } from './components/light-mode/top/tools/modes/modes.component';
 
 // dark mode
+import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
 import { FollowerComponent } from './components/dark-mode/follower/follower.component';
 import { DarkNavComponent } from './components/dark-mode/dark-nav/dark-nav.component';
 import { PreviewComponent } from './components/dark-mode/preview/preview.component';
+import { PortfolioMacComponent } from './components/light-mode/portfolio-mac/portfolio-mac.component';
 
 @NgModule({
     declarations: [
@@ -38,14 +42,15 @@ import { PreviewComponent } from './components/dark-mode/preview/preview.compone
         FooterComponent,
         TopComponent,
         LightModeComponent,
-        DarkModeComponent,
         ToolsComponent,
         FlagsComponent,
         ModesComponent,
         // dark mode
+        DarkModeComponent,
         FollowerComponent,
         DarkNavComponent,
-        PreviewComponent
+        PreviewComponent,
+        PortfolioMacComponent
     ],
     imports: [
         BrowserModule,

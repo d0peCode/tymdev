@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit, OnChanges } from '@angular/core';
 import Swiper from 'swiper';
-import {TouchService} from '../../services/touch.service';
-import {SelectedAppService} from '../../services/selectedApp.service';
+import {TouchService} from '../../../services/touch.service';
+import {SelectedAppService} from '../../../services/selectedApp.service';
 
 @Component({
     providers: [SelectedAppService],
@@ -13,14 +13,12 @@ export class DarkNavComponent implements AfterViewInit, OnChanges, OnInit {
     mySwiper: Swiper;
 
     slides = [
-        'InGameTrade',
+        'QuickMargo',
         'TwoHouse',
         'ActiveYachtClub',
-        'QuickMargo',
-        'StaszekSelekt',
-        'SelectedEvents',
         'AdminPanel',
-        'ColorReader'
+        'ColorReader',
+        'ScreenRecorder'
     ];
 
     constructor(private touchService: TouchService, private selectedAppService: SelectedAppService) {}

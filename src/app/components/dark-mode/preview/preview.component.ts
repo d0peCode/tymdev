@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SelectedAppService } from '../../services/selectedApp.service';
+import { SelectedAppService } from '../../../services/selectedApp.service';
 
 @Component({
     providers: [SelectedAppService],

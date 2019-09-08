@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import {TouchService} from "../../services/touch.service";
+import {TouchService} from "../../../services/touch.service";
 
 @Component({
     selector: 'app-follower',
