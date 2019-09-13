@@ -26,7 +26,6 @@ import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
 import { FollowerComponent } from './components/dark-mode/follower/follower.component';
 import { DarkNavComponent } from './components/dark-mode/dark-nav/dark-nav.component';
 import { PreviewComponent } from './components/dark-mode/preview/preview.component';
-import { PortfolioMacComponent } from './components/light-mode/portfolio-mac/portfolio-mac.component';
 
 @NgModule({
     declarations: [
@@ -49,8 +48,7 @@ import { PortfolioMacComponent } from './components/light-mode/portfolio-mac/por
         DarkModeComponent,
         FollowerComponent,
         DarkNavComponent,
-        PreviewComponent,
-        PortfolioMacComponent
+        PreviewComponent
     ],
     imports: [
         BrowserModule,
