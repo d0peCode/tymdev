@@ -65,14 +65,18 @@ body {
         background-color: #7f92f1;
         color: white;
         position: absolute;
-        top: 50%;
-        right: -70px;
-        transform: translateY(-50%);
         border-radius: 50%;
         border: 0;
         width: 60px;
         height: 60px;
         font-size: 30px;
+        filter: drop-shadow(1px 4px 3px rgba(0,0,0,.2));
+        transition: .5s filter, .2s transform;
+
+        &:hover {
+            filter: drop-shadow(1px 4px 3px rgba(0,0,0, .5));
+            transform: scale(1.05) translateY(-50%);
+        }
 
         &__arrow {
             display: flex;
