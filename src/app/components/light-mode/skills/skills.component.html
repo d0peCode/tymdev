@@ -4,38 +4,31 @@
         <p class="skills__top-paragraph">Zapraszam do kontaktu po więcej szczegółów na temat moich umiejętności technicznych.</p>
     </header>
     <div class="skills__body">
-        <div class="skills__body-box skills__body-box--left">
-            <div class="skills__body-box-icon">
-                <img src="../../assets/icons/laptop.png" alt="Responsive">
-            </div>
-            <div class="skills__body-box-header">
-                <h3>Responsywność</h3>
-            </div>
-            <div class="skills__body-box-text">
-                <p>Każda strona i aplikacja, którą tworzę jest responsywna i dopasowuje się do każdego urządzenia.</p>
-            </div>
-        </div>
-        <div class="skills__body-box skills__body-box--middle">
-            <div class="skills__body-box-icon skills__body-box-icon--middle">
-                <img src="../../assets/icons/fe-be.png" alt="Frontend/Backend">
-            </div>
-            <div class="skills__body-box-header">
-                <h3>Frontend/Backend</h3>
-            </div>
-            <div class="skills__body-box-text">
-                <p>W javascripcie znam zarówno technologie front-endowe jak i backendowe dzięki czemu jestem w stanie pracować nad wieloma rzeczami.</p>
-            </div>
-        </div>
-        <div class="skills__body-box skills__body-box--right">
-            <div class="skills__body-box-icon skills__body-box-icon--right">
-                <img src="../../assets/icons/seo.png" alt="SEO">
-            </div>
-            <div class="skills__body-box-header">
-                <h3>SEO</h3>
-            </div>
-            <div class="skills__body-box-text">
-                <p>Dbam o semantykę HTMLa dzięki czemu strony, które tworze są wstępnie przygotowane pod pozycjonowanie.</p>
-            </div>
+        <div class="swiper-wrapper">
+            <section *ngFor="let item of slides; let i = index" class="swiper-slide"
+                     [ngClass]="[
+                       i === 0 || i === 3 ? 'skills__body-box--left' : '',
+                       i === 1 || i === 4 ? 'skills__body-box--middle' : '',
+                       i === 2 || i === 5 ? 'skills__body-box--right' : ''
+            ]">
+                <div class="skills__body-box">
+                    <div class="skills__body-box-icon">
+                        <img [src]="item.image.src" [alt]="item.image.alt">
+                    </div>
+                    <div class="skills__body-box-header">
+                        <h3>{{ item.header }}</h3>
+                    </div>
+                    <div class="skills__body-box-text">
+                        <p>{{ item.text }}</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+    <button type="button" class="skills__button skills__button--left button-icon--right button-circle" (click)="previousSlide()">
+        <span class="button-circle__arrow">&larr;</span>
+    </button>
+    <button type="button" class="skills__button skills__button--right button-icon--right button-circle" (click)="nextSlide()">
+        <span class="button-circle__arrow">&rarr;</span>
+    </button>
 </section>
