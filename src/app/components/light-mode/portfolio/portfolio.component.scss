@@ -72,6 +72,11 @@
     &__button {
         margin-top: 10px;
     }
+    &__next {
+        top: 50%;
+        right: -70px;
+        transform: translateY(-50%);
+    }
 }
 
 .swiper-wrapper {

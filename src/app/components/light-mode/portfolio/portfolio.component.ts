@@ -67,17 +67,16 @@ export class PortfolioComponent implements OnInit {
 
     ngAfterViewInit() {
         this.mySwiper = new Swiper('.nav-light', {
-           paginationClickable: false,
+            paginationClickable: false,
             grabCursor: true,
             loop: true,
             slidesPerView: 1
         });
-
     }
 
     nextSlide() {
         this.mySwiper.slideNext();
-    };
+    }
 
     ngOnInit() {
     }
