@@ -21,7 +21,7 @@
                 transform: scale(1.048);
             }
 
-            & a {
+            & a, span {
                 backface-visibility: hidden;
                 height: 100%;
                 text-decoration: none;
@@ -31,6 +31,7 @@
                 font-size: 12px;
                 font-weight: 700;
                 letter-spacing: 1px;
+                cursor: pointer;
             }
         }
     }

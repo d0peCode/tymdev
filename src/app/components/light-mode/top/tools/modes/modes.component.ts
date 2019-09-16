@@ -1,24 +1,33 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import {StoreService} from '../../../../../services/store.service';
 
 @Component({
     selector: 'app-modes',
     templateUrl: './modes.component.html',
-    styleUrls: ['./modes.component.scss']
+    styleUrls: ['./modes.component.scss'],
+    providers: [StoreService]
 })
 
 export class ModesComponent implements OnInit {
-    @Input() mode: boolean;
-    constructor(private router: Router) { }
+    mode: boolean;
+    modeFromStore: string;
+    el = [];
 
-    ngOnInit() { }
+    constructor(private storeService: StoreService) { }
+
+    ngOnInit() {
+        this.el = this.storeService.el;
+        this.modeFromStore = this.storeService.mode;
+    }
 
     modeChanged() {
-        if(this.mode) {
-            this.router.navigate(['/dark']);
-        } else {
-            this.router.navigate(['/']);
-        }
         console.log(this.mode);
+        this.storeService.addEl();
+        if (this.mode) {
+            this.storeService.setMode('dark');
+        } else {
+            this.storeService.setMode('light');
+        }
+        console.log(this.modeFromStore);
     }
 }

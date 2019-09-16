@@ -3,12 +3,13 @@
   top: 50%;
   left: 25%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: 400px;
 
   &__header {
     font-family: 'Lato', sans-serif;
     color: #313131;
     margin: 0;
+      font-size: 2rem;
   }
 
   &__button {

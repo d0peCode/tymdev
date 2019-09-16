@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './components/app.component';
 
+// blog
+import { BlogComponent } from './components/blog/blog/blog.component';
+
 // light mode
 import { BgTopComponent } from './components/light-mode/top/bg-top/bg-top.component';
 import { SkillsComponent } from './components/light-mode/skills/skills.component';
@@ -23,13 +26,11 @@ import { ModesComponent } from './components/light-mode/top/tools/modes/modes.co
 
 // dark mode
 import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
-import { FollowerComponent } from './components/dark-mode/follower/follower.component';
-import { DarkNavComponent } from './components/dark-mode/dark-nav/dark-nav.component';
-import { PreviewComponent } from './components/dark-mode/preview/preview.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        BlogComponent,
         // light mode
         BgTopComponent,
         SkillsComponent,
@@ -45,10 +46,7 @@ import { PreviewComponent } from './components/dark-mode/preview/preview.compone
         FlagsComponent,
         ModesComponent,
         // dark mode
-        DarkModeComponent,
-        FollowerComponent,
-        DarkNavComponent,
-        PreviewComponent
+        DarkModeComponent
     ],
     imports: [
         BrowserModule,

@@ -1,16 +1,19 @@
 <nav class="nav">
     <ul class="nav__list">
         <li>
-            <a href="#skills">umiejętności</a>
+            <span (click)="scrollToElement('skills')" i18n="skills">umiejętności</span>
         </li>
         <li>
-            <a href="#skills">portfolio</a>
+            <span (click)="scrollToElement('portfolio')">portfolio</span>
         </li>
         <li>
-            <a href="#skills">kontakt</a>
+            <span (click)="scrollToElement('contact')" i18n="valuation">Wycena</span>
         </li>
         <li>
-            <a href="tymdev.pl/admin" target="_blank">dla klientów</a>
+            <a routerLink="/blog">blog</a>
+        </li>
+        <li>
+            <a href="http://tymdev.pl/admin" i18n="for-clients">dla klientów</a>
         </li>
     </ul>
 </nav>

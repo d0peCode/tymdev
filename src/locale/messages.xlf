@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="66134eeecff99d9703d69bbf2a2a097075786183" datatype="html">
+        <source>umiejętności</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/light-mode/top/light-nav/light-nav.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">skills</note>
+      </trans-unit>
+      <trans-unit id="9c77fa80da1eacce908f31ee6507a7f0585c33ac" datatype="html">
+        <source>Wycena</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/light-mode/top/light-nav/light-nav.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">valuation</note>
+      </trans-unit>
+      <trans-unit id="75b8ce8e14a76a7ba6c4d4c5089a8a78fb7c6d4e" datatype="html">
+        <source>dla klientów</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/light-mode/top/light-nav/light-nav.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">for-clients</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
