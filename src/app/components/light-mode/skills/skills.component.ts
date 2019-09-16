@@ -36,26 +36,26 @@ export class SkillsComponent implements OnInit {
         },
         {
             image: {
-                src:  '../../assets/icons/seo.png',
-                alt: 'Search engine optimization'
+                src:  '../../assets/icons/fe-be.png',
+                alt: 'Javascript'
             },
-            header: 'SEO1',
-            text: 'Dbam o semantykę HTMLa dzięki czemu aplikacje, które tworze są wstępnie przygotowane pod pozycjonowanie.'
+            header: 'Javascript',
+            text: 'ES6+, Vue2JS, Ionic, Angular, AngularJS, Electron, NodeJS, ExpressJS'
+        },
+        {
+            image: {
+                src:  '../../assets/icons/laptop.png',
+                alt: 'CSS'
+            },
+            header: 'CSS',
+            text: 'CSS3, SCSS, BEM, Bootstrap 3, Bootstrap 4, keyframes, animations'
         },
         {
             image: {
                 src:  '../../assets/icons/seo.png',
                 alt: 'Search engine optimization'
             },
-            header: 'SEO2',
-            text: 'Dbam o semantykę HTMLa dzięki czemu aplikacje, które tworze są wstępnie przygotowane pod pozycjonowanie.'
-        },
-        {
-            image: {
-                src:  '../../assets/icons/seo.png',
-                alt: 'Search engine optimization'
-            },
-            header: 'SEO3',
+            header: 'HTML',
             text: 'Dbam o semantykę HTMLa dzięki czemu aplikacje, które tworze są wstępnie przygotowane pod pozycjonowanie.'
         }
     ];
