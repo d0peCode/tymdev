@@ -11,23 +11,22 @@ import {StoreService} from '../../../../../services/store.service';
 export class ModesComponent implements OnInit {
     mode: boolean;
     modeFromStore: string;
-    el = [];
 
     constructor(private storeService: StoreService) { }
 
     ngOnInit() {
-        this.el = this.storeService.el;
-        this.modeFromStore = this.storeService.mode;
+        this.storeService.bhs.subscribe(
+            (res) => {
+                this.modeFromStore = res;
+            }
+        );
     }
 
     modeChanged() {
-        console.log(this.mode);
-        this.storeService.addEl();
         if (this.mode) {
             this.storeService.setMode('dark');
         } else {
             this.storeService.setMode('light');
         }
-        console.log(this.modeFromStore);
     }
 }
