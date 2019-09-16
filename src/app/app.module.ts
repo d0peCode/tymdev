@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './components/app.component';
 
+// blog
+import { BlogComponent } from './components/blog/blog/blog.component';
+
 // light mode
 import { BgTopComponent } from './components/light-mode/top/bg-top/bg-top.component';
 import { SkillsComponent } from './components/light-mode/skills/skills.component';
@@ -23,10 +26,7 @@ import { ModesComponent } from './components/light-mode/top/tools/modes/modes.co
 
 // dark mode
 import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
-import { FollowerComponent } from './components/dark-mode/follower/follower.component';
-import { DarkNavComponent } from './components/dark-mode/dark-nav/dark-nav.component';
-import { PreviewComponent } from './components/dark-mode/preview/preview.component';
-import { PortfolioMacComponent } from './components/light-mode/portfolio-mac/portfolio-mac.component';
+import { StoreService } from './services/store.service';
 
 @NgModule({
     declarations: [
@@ -47,10 +47,8 @@ import { PortfolioMacComponent } from './components/light-mode/portfolio-mac/por
         ModesComponent,
         // dark mode
         DarkModeComponent,
-        FollowerComponent,
-        DarkNavComponent,
-        PreviewComponent,
-        PortfolioMacComponent
+        // blog
+        BlogComponent
     ],
     imports: [
         BrowserModule,
@@ -58,7 +56,7 @@ import { PortfolioMacComponent } from './components/light-mode/portfolio-mac/por
         FormsModule,
         HttpClientModule
     ],
-    providers: [],
+    providers: [StoreService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

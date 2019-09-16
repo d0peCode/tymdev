@@ -5,7 +5,7 @@
   width: 70%;
   left: 15%;
 
-  &-icon {
+  &__icon {
     display: block;
     width: 35px;
     height: 35px;
@@ -13,9 +13,32 @@
     border-radius: 50%;
   }
 
-  &-header {
+  &__header {
     font-family: 'Oswald', sans-serif;
     font-weight: 900;
     color: #313131;
   }
+    &__social-list {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin-left: 10px;
+
+        & li {
+            display: flex;
+            align-items: center;
+            height: 45px;
+        }
+
+        &-icon {
+            filter: invert(100%);
+            width: 23px;
+            height: 23px;
+            margin: 0 2px;
+
+            &--so {
+                width: 18px;
+            }
+        }
+    }
 }

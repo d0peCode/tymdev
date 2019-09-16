@@ -1,17 +1,32 @@
-<main class="portfolio" role="main">
+<main class="portfolio" role="main" id="portfolio">
     <header class="portfolio__header">
-        <h2 class="heading heading--primary">Portfolio</h2>
-        <p class="portfolio__header-paragraph">Poniżej przedstawione są moje wybrane projekty. Niektóre projekty posiadają link do kodu na GitHubie jednakże większość z nich są projektami komercyjnymi, wykonanymi dla klientów dlatego nie mogę udostępnić ich kodu źródłowego. Przeciągnij aby przewinąć.</p>
+        <div class="portfolio__header-container">
+            <h2 class="heading heading--primary">Portfolio</h2>
+            <p class="portfolio__header-paragraph">Poniżej przedstawione są moje wybrane projekty. Niektóre projekty posiadają link do kodu na GitHubie jednakże większość z nich są projektami komercyjnymi, wykonanymi dla klientów dlatego nie mogę udostępnić ich kodu źródłowego. Przeciągnij aby przewinąć.</p>
+        </div>
     </header>
-    <section class="nav">
+    <section class="nav-light">
         <div class="swiper-wrapper">
             <article class="swiper-slide" *ngFor="let item of slides; let i = index">
-                <div class="portfolio__image"></div>
+                <div class="portfolio__image" [style.background-image]="'url(' + item.bg + ')'"></div>
                 <div class="portfolio__content">
                     <h3 [attr.data-index]="'0' + i" class="heading heading--secondary">{{ item.name }}</h3>
                     <time class="portfolio__date"> {{ item.date }} </time>
                     <p class="portfolio__content-paragraph">{{ item.description }}</p>
-                    <img *ngFor="let n of item.icons" [src]="n" alt="" class="portfolio__content-icon">
+                    <div>
+                        <img *ngFor="let n of item.icons" [src]="n" alt="" class="portfolio__content-icon">
+                    </div>
+                    <a *ngIf="item.live" [href]="item.link.live" target="_blank" class="button button--primary portfolio__button">
+                        <span class="button-text">Zobacz</span>
+                        <span class="button-icon button-icon--right">&#9660;</span>
+                    </a>
+                    <a *ngIf="item.git" [href]="item.link.live" target="_blank" class="button button--primary portfolio__button">
+                        <span class="button-text">GitHub</span>
+                        <span class="button-icon button-icon--right">&#9660;</span>
+                    </a>
+                    <button type="button" class="portfolio__next button-icon--right button-circle" (click)="nextSlide()">
+                        <span class="button-circle__arrow">&rarr;</span>
+                    </button>
                 </div>
             </article>
         </div>

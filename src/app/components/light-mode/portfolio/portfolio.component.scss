@@ -1,11 +1,18 @@
 .portfolio {
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
   margin: 30vh auto;
 
 
   &__header {
-    max-width: 500px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    &-container {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 500px;
+    }
 
     &-paragraph {
       font-family: 'Lato', sans-serif;
@@ -16,7 +23,7 @@
   }
 }
 
-.nav {
+.nav-light {
   display: flex;
   overflow: hidden;
 
@@ -31,16 +38,22 @@
 }
 
 .portfolio {
-  &__image {
-    width: 60%;
-    height: 80vh;
-    background-image: url("../../../../assets/projects/th.jpg");
-    background-size: cover;
-    border: 12px solid #3a55e9;
+    &__image {
+    margin-left: -6%;
+    width: 75%;
+    height: 95vh;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   &__content {
-    width: 40%;
-    padding: 10px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: center;
+    margin-left: -7%;
+    width: 30%;
+    padding: 10px;
 
     &-paragraph {
       font-family: 'Lato', sans-serif;
@@ -55,6 +68,14 @@
         font-family: 'Lato', sans-serif;
         font-size: 14px;
         color: #898989;
+    }
+    &__button {
+        margin-top: 10px;
+    }
+    &__next {
+        top: 50%;
+        right: -70px;
+        transform: translateY(-50%);
     }
 }
 
