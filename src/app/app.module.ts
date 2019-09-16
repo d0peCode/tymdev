@@ -26,11 +26,11 @@ import { ModesComponent } from './components/light-mode/top/tools/modes/modes.co
 
 // dark mode
 import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
+import { StoreService } from './services/store.service';
 
 @NgModule({
     declarations: [
         AppComponent,
-        BlogComponent,
         // light mode
         BgTopComponent,
         SkillsComponent,
@@ -46,7 +46,9 @@ import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
         FlagsComponent,
         ModesComponent,
         // dark mode
-        DarkModeComponent
+        DarkModeComponent,
+        // blog
+        BlogComponent
     ],
     imports: [
         BrowserModule,
@@ -54,7 +56,7 @@ import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
         FormsModule,
         HttpClientModule
     ],
-    providers: [],
+    providers: [StoreService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

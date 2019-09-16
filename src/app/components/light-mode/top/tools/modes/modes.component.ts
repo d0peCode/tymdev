@@ -5,7 +5,7 @@ import {StoreService} from '../../../../../services/store.service';
     selector: 'app-modes',
     templateUrl: './modes.component.html',
     styleUrls: ['./modes.component.scss'],
-    providers: [StoreService]
+    providers: []
 })
 
 export class ModesComponent implements OnInit {

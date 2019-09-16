@@ -2,8 +2,6 @@ import {BehaviorSubject} from 'rxjs';
 
 export class StoreService {
     public mode = 'light';
-    public el = ['aa', 'bb'];
-
     public bhs: BehaviorSubject<string>;
 
     constructor() {
@@ -12,9 +10,5 @@ export class StoreService {
 
     setMode(newMode: string) {
         this.bhs.next(newMode);
-    }
-
-    addEl() {
-        this.el.push('');
     }
 }

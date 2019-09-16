@@ -1,5 +1,7 @@
-<app-top></app-top>
-<app-skills></app-skills>
-<app-portfolio></app-portfolio>
-<app-contact></app-contact>
-<app-footer></app-footer>
+<div [ngClass]="modeFromStore === 'dark' ? 'background-dark' : ''">
+    <app-top></app-top>
+    <app-skills></app-skills>
+    <app-portfolio></app-portfolio>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+</div>
