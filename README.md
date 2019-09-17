@@ -1,4 +1,8 @@
-# TymdevNew
+# API
+
+API was built on top of my [boilerplate fork](https://github.com/d0peCode/express-mongo-jwt-boilerplate). 
+
+# FRONT
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
