@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-greeting',
-  templateUrl: './greeting.component.html',
-  styleUrls: ['./greeting.component.scss']
+selector: 'app-greeting',
+templateUrl: './greeting.component.html',
+styleUrls: ['./greeting.component.scss']
 })
 export class GreetingComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    goPortfolio(): void {
+        const element = document.querySelector(`#portfolio`);
+        element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+    }
 
 }
