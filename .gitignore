@@ -8,7 +8,7 @@ public/node_modules
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
-
+.env
 # dependencies
 
 # profiling files
