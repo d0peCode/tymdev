@@ -10,28 +10,27 @@ import { AppComponent } from './components/app.component';
 import { BlogComponent } from './components/blog/blog/blog.component';
 
 // light mode
-import { BgTopComponent } from './components/light-mode/top/bg-top/bg-top.component';
-import { SkillsComponent } from './components/light-mode/skills/skills.component';
-import { PortfolioComponent } from './components/light-mode/portfolio/portfolio.component';
-import { ContactComponent } from './components/light-mode/contact/contact.component';
-import { LightNavComponent } from './components/light-mode/top/light-nav/light-nav.component';
-import { GreetingComponent } from './components/light-mode/top/greeting/greeting.component';
-import { LogoComponent } from './components/light-mode/top/logo/logo.component';
-import { FooterComponent } from './components/light-mode/footer/footer.component';
-import { TopComponent } from './components/light-mode/top/top.component';
-import { LightModeComponent } from './components/light-mode/light-mode.component';
-import { ToolsComponent } from './components/light-mode/top/tools/tools.component';
-import { FlagsComponent } from './components/light-mode/top/tools/flags/flags.component';
-import { ModesComponent } from './components/light-mode/top/tools/modes/modes.component';
+import { BgTopComponent } from './components/landing/top/bg-top/bg-top.component';
+import { SkillsComponent } from './components/landing/skills/skills.component';
+import { PortfolioComponent } from './components/landing/portfolio/portfolio.component';
+import { ContactComponent } from './components/landing/contact/contact.component';
+import { LightNavComponent } from './components/landing/top/light-nav/light-nav.component';
+import { GreetingComponent } from './components/landing/top/greeting/greeting.component';
+import { LogoComponent } from './components/landing/top/logo/logo.component';
+import { FooterComponent } from './components/landing/footer/footer.component';
+import { TopComponent } from './components/landing/top/top.component';
+import { LightModeComponent } from './components/landing/light-mode.component';
+import { ToolsComponent } from './components/landing/top/tools/tools.component';
+import { FlagsComponent } from './components/landing/top/tools/flags/flags.component';
+import { ModesComponent } from './components/landing/top/tools/modes/modes.component';
 
-// dark mode
-import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
+// services
 import { StoreService } from './services/store.service';
 
 @NgModule({
     declarations: [
         AppComponent,
-        // light mode
+        // landing page
         BgTopComponent,
         SkillsComponent,
         PortfolioComponent,
@@ -45,8 +44,6 @@ import { StoreService } from './services/store.service';
         ToolsComponent,
         FlagsComponent,
         ModesComponent,
-        // dark mode
-        DarkModeComponent,
         // blog
         BlogComponent
     ],

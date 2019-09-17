@@ -1,17 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LightModeComponent } from './components/light-mode/light-mode.component';
-import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
+import { LightModeComponent } from './components/landing/light-mode.component';
 import { BlogComponent } from './components/blog/blog/blog.component';
 
 const routes: Routes = [
     {
         path: '',
         component: LightModeComponent
-    },
-    {
-        path: 'dark',
-        component: DarkModeComponent
     },
     {
         path: 'blog',
