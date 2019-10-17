@@ -23,6 +23,10 @@
     }
   }
 
+  @media only screen and (min-width: 1500px) {
+    height: 105vh;
+  }
+
   &__body {
     display: flex;
       margin: 0 auto 0 auto;
@@ -36,6 +40,11 @@
       background-color: rgba(135, 150, 255, .6);
       border-radius: 40px;
       position: relative;
+
+        @media only screen and (min-width: 1500px) {
+          width: 380px;
+          height: 380px;
+        }
 
         &--left {
             margin-top: 20vh;
@@ -64,11 +73,15 @@
       &-header {
         font-family: 'Oswald', sans-serif;
         color: #fed312;
-        font-size: 26px;
+        font-size: 24px;
         text-align: center;
         width: 100%;
         padding-top: 65px;
-          margin-top: 80px;
+        margin-top: 80px;
+
+        @media only screen and (min-width: 1500px) {
+          font-size: 36px;
+        }
       }
 
       &-text {
@@ -78,6 +91,10 @@
         font-size: 16px;
         color: white;
         text-align: center;
+
+          @media only screen and (min-width: 1500px) {
+            font-size: 20px;
+          }
       }
     }
   }

@@ -11,19 +11,23 @@
         </header>
     </div>
     <div class="contact__col">
-        <form class="contact__form">
+        <form class="contact__form" (ngSubmit)="sendMessage()">
             <div class="contact__input-box">
                 <label for="email" class="contact__input-label">adres e-mail</label>
-                <input type="email" id="email" class="contact__input-input" placeholder="example@gmail.com">
+                <input type="email" id="email" class="contact__input-input" placeholder="przyklad@gmail.com" [(ngModel)]="email" name="email" required="">
             </div>
             <div class="contact__input-box">
                 <label for="phone" class="contact__input-label">numer telefonu (opcjonalne)</label>
-                <input type="tel" id="phone" class="contact__input-input" placeholder="+48 795 691 258">
+                <input type="tel" id="phone" class="contact__input-input" placeholder="+48 795 691 258" [(ngModel)]="phone" name="phone">
             </div>
             <div class="contact__input-box">
                 <label for="message" class="contact__input-label">wiadomość</label>
-                <textarea id="message" class="contact__input-textarea" placeholder="Your message..."></textarea>
+                <textarea id="message" class="contact__input-textarea" placeholder="Twoja wiadomość..." [(ngModel)]="message" name="message"></textarea>
             </div>
+            <button type="submit" class="button button--primary">
+                <span class="button-text">Wyślij</span>
+                <span class="button-icon button-icon--right">&#9660;</span>
+            </button>
         </form>
     </div>
 </section>
