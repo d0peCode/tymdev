@@ -19,7 +19,7 @@ export class PortfolioComponent implements OnInit {
             live: true,
             git: false,
             link: {
-                live: 'https://two-house.com/'
+                live: 'http://twohouse.pl'
             }
         },
         {
@@ -43,7 +43,7 @@ export class PortfolioComponent implements OnInit {
             live: true,
             git: false,
             link: {
-                live: 'https://two-house.com/'
+                live: 'https://quickmargo.pl'
             }
         },
         {
@@ -61,10 +61,25 @@ export class PortfolioComponent implements OnInit {
         {
             name: 'ScreenRecorder',
             date: '05.09.2019',
-            image: ''
+            description: 'Aplikacja do nagrywania ekranu. Jest stworzona z Electronem oraz AngularJS. Aplikacja może zapisać nagranie zarówno na dysku jak i w chmurze i wystawić link. Używa cloudinary API w celu zapisania nagrania. Projekt open source kod jest dostępny na githubie.',
+            image: '../../../../assets/projects/screenrecorder.png',
+            git: true,
+            live: false,
+            bg: '../../../../assets/projects/screenrecorder.png',
+            link: {
+                git: 'https://github.com/d0peCode/screenRecorder'
+            }
         },
         {
             name: 'ColorReader',
+            date: '10.02.2018',
+            git: true,
+            live: true,
+            link: {
+                live: 'http://colorchanger.tymdev.pl',
+                git: 'https://github.com/d0peCode/colorReader'
+            },
+            description: 'Mała aplikacja do wyboru koloru napisana w AngularJS. Pokazuje odcienie wybranego koloru. Kolory można zapisać do palety i pozostanąone w pamięci podręcznej. Można przekonwertować formaty kolorów RGB, HEX, HSL.',
             bg: '../../../../assets/projects/colorchanger.png',
         }
     ];
