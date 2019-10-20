@@ -5,11 +5,19 @@
   transform: translate(-50%, -50%);
   width: 400px;
 
+  @media only screen and (max-width: 768px) {
+    top: 60vh;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    transform: unset;
+  }
+
   &__header {
     font-family: 'Lato', sans-serif;
     color: #313131;
     margin: 0;
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   &__button {

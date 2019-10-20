@@ -4,11 +4,26 @@
     right: 30px;
     z-index: 2;
 
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     &__list {
         list-style: none;
         display: flex;
 
+        @media only screen and (max-width: 768px) {
+            max-width: 70%;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
         & > li {
+            @media only screen and (max-width: 768px) {
+                margin: 2px;
+            }
+
             margin: 0 5px;
             padding: 5px 10px;
             border-radius: 20px;
