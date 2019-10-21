@@ -60,6 +60,8 @@ export class SkillsComponent implements OnInit {
         }
     ];
 
+    slidesPerView = 3;
+
     constructor() {}
 
     ngAfterViewInit() {
@@ -67,7 +69,7 @@ export class SkillsComponent implements OnInit {
             paginationClickable: false,
             grabCursor: true,
             loop: true,
-            slidesPerView: 3
+            slidesPerView: this.slidesPerView
         });
     }
 
@@ -77,8 +79,17 @@ export class SkillsComponent implements OnInit {
     nextSlide() {
         this.mySwiper.slideNext();
     }
+    handleSlidesAmount() {
+        if(window.innerWidth < 1000) {
+            this.slidesPerView = 2;
+        }
+        if(window.innerWidth < 600) {
+            this.slidesPerView = 1;
+        }
+    }
 
     ngOnInit() {
+        this.handleSlidesAmount();
     }
 
 }

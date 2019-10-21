@@ -6,6 +6,10 @@
   height: 120vh;
   position: relative;
 
+  @media only screen and (max-width: 768px) {
+    margin-top: 25vh;
+  }
+
   &__top {
     text-align: center;
     width: 350px;
@@ -20,6 +24,10 @@
       color: #313131;
       margin: 5px 0;
       padding: 0 10px;
+
+      @media only screen and (max-width: 768px) {
+        color: white;
+      }
     }
   }
 
@@ -29,32 +37,51 @@
 
   &__body {
     display: flex;
-      margin: 0 auto 0 auto;
-      width: 80%;
-      overflow-x: hidden;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    overflow-x: hidden;
+
+    @media only screen and (max-width: 768px) {
+      width: 98%;
+    }
 
     &-box {
       width: 300px;
       height: 300px;
-        margin: auto;
+      margin: auto;
       background-color: rgba(135, 150, 255, .6);
       border-radius: 40px;
       position: relative;
 
-        @media only screen and (min-width: 1500px) {
-          width: 380px;
-          height: 380px;
-        }
+      @media only screen and (max-width: 768px) {
+        width: 270px;
+      }
+      @media only screen and (min-width: 1500px) {
+        width: 380px;
+        height: 380px;
+      }
 
+      &--left {
+          margin-top: 20vh;
+      }
+      &--right {
+          margin-top: 28vh;
+      }
+      &--middle {
+          margin-top: 31vh;
+      }
+
+      @media only screen and (max-width: 768px) {
         &--left {
-            margin-top: 20vh;
+          margin-top: 25vh;
         }
         &--right {
-            margin-top: 28vh;
+          margin-top: 25vh;
         }
         &--middle {
-            margin-top: 31vh;
+          margin-top: 25vh;
         }
+      }
 
       &-icon {
         position: absolute;
@@ -105,10 +132,10 @@
         transform: translateY(-50%);
 
         &--left {
-            left: 50px;
+            left: 5px;
         }
         &--right {
-            right: 50px;
+            right: 5px;
         }
     }
 }
