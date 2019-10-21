@@ -19,6 +19,10 @@
       width: 100%;
       font-size: 16px;
       color: #313131;
+
+      @media only screen and (max-width: 768px) {
+        padding: 10px;
+      }
     }
   }
 }
@@ -35,6 +39,10 @@
 
 .swiper-slide {
   display: flex;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .portfolio {
@@ -44,6 +52,12 @@
     height: 95vh;
     background-size: contain;
     background-repeat: no-repeat;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+        height: 36vh;
+      }
   }
   &__content {
     position: relative;
@@ -55,6 +69,11 @@
     width: 30%;
     padding: 10px;
 
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
     &-paragraph {
       font-family: 'Lato', sans-serif;
       font-size: 18px;
@@ -64,19 +83,23 @@
       margin-right: 10px;
     }
   }
-    &__date {
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-        color: #898989;
+  &__date {
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      color: #898989;
+  }
+  &__button {
+      margin-top: 10px;
+  }
+  &__next {
+    top: 50%;
+    right: -70px;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: 768px) {
+      display: none;
     }
-    &__button {
-        margin-top: 10px;
-    }
-    &__next {
-        top: 50%;
-        right: -70px;
-        transform: translateY(-50%);
-    }
+  }
 }
 
 .swiper-wrapper {
