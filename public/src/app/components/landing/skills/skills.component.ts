@@ -86,10 +86,12 @@ export class SkillsComponent implements OnInit {
         if(window.innerWidth < 600) {
             this.slidesPerView = 1;
         }
+        if(this.mySwiper) this.mySwiper.reInit();
     }
 
     ngOnInit() {
         this.handleSlidesAmount();
+        window.addEventListener('resize', this.handleSlidesAmount);
     }
 
 }
