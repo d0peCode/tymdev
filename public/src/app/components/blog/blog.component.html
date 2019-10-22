@@ -1,0 +1,14 @@
+<div class="blog">
+  <h2 class="blog__heading-primary">tymdev Blog</h2>
+  <h3 class="blog__heading-secondary">Cancelable interval?</h3>
+  <time class="blog__date" datetime="2019-10-21">2019-10-21</time>
+  <p class="blog__paragraph">When I was developing my online game bot I fall into pretty interesting scenerio in which I had interval which was occasionally executing following iterations faster than its function finished its job. Its function had some asynchronous code which could execute longer than gap between interval iterations. However it wasn't deliberate behaviour therefore I had to fix it. What I end up with at first try was just clearing interval by its id at the top of its function and then call it and reassign its id at the bottom which is common trick.</p>
+  <ngx-prism language="JavaScript">{{ content }}</ngx-prism>
+  <p class="blog__paragraph">I thought I'm done but I quickly realised that I'm not able to stop such mechanism in any way although I'm returning its id. My interval wasn't permanent and after some event I wanted to stop it but I coudn't. That's because I was reassigning id in loop so if I add at the bottom of `foo` function:</p>
+  <ngx-prism language="JavaScript">{{ content2 }}</ngx-prism>
+  <p class="blog__paragraph">It simply not going to work correctly. After few minutes I find out that's it's rather impossible to achieve my goal with this setup and with native javascript interval in general. I started to creating function which would act like `setInterval` but instead returning interval id actually provide `cancel` method with use of clousures.</p><p class="blog__paragraph"> I finished with following code:</p>
+  <ngx-prism language="JavaScript">{{ content3 }}</ngx-prism>
+  <p class="blog__paragraph">And that's it. Now my interval wait for its body function to finish before next iteration and after some event I can call returned `cancel()` which is going to stop it:</p>
+  <ngx-prism language="JavaScript">{{ content4 }}</ngx-prism>
+  <p class="blog__paragraph">Voilà</p>
+</div>

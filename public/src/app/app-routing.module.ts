@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LightModeComponent } from './components/landing/light-mode.component';
-import { BlogComponent } from './components/blog/blog/blog.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 const routes: Routes = [
     {

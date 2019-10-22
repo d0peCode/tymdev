@@ -234,7 +234,7 @@ module.exports = "<p>\r\n  blog works!\r\n</p>\r\n"
 
 /***/ "./src/app/components/blog/blog/blog.component.sass":
 /*!**********************************************************!*\
-  !*** ./src/app/components/blog/blog/blog.component.sass ***!
+  !*** ./src/app/components/blog/blog/blog.component.scss ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -266,7 +266,7 @@ var BlogComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-blog',
             template: __webpack_require__(/*! ./blog.component.html */ "./src/app/components/blog/blog/blog.component.html"),
-            styles: [__webpack_require__(/*! ./blog.component.sass */ "./src/app/components/blog/blog/blog.component.sass")]
+            styles: [__webpack_require__(/*! ./blog.component.scss */ "./src/app/components/blog/blog/blog.component.sass")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], BlogComponent);
@@ -777,7 +777,7 @@ module.exports = "<div class=\"bg-top-right\"></div>"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".bg-top-right {\n  background: url('bg-top-right.png') no-repeat top left;\n  background-size: cover;\n  height: 150vh;\n  width: 55%;\n  position: absolute;\n  top: 0;\n  right: 0; }\n  @media only screen and (max-width: 768px) {\n    .bg-top-right {\n      height: 85vh;\n      width: 98%; } }\n  @media only screen and (min-width: 1500px) {\n    .bg-top-right {\n      height: 130vh; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9sYW5kaW5nL3RvcC9iZy10b3AvQzpcXFVzZXJzXFxCb3J5c1xcRG9jdW1lbnRzXFx3b3JrXFx0eW1kZXZcXHB1YmxpYy9zcmNcXGFwcFxcY29tcG9uZW50c1xcbGFuZGluZ1xcdG9wXFxiZy10b3BcXGJnLXRvcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHNEQUE0RTtFQUM1RSxzQkFBc0I7RUFDdEIsYUFBYTtFQUNiLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLFFBQVEsRUFBQTtFQUVSO0lBVEo7TUFVUSxZQUFZO01BQ1osVUFBVSxFQUFBLEVBS2pCO0VBSEc7SUFiSjtNQWNRLGFBQWEsRUFBQSxFQUVwQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbGFuZGluZy90b3AvYmctdG9wL2JnLXRvcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iZy10b3AtcmlnaHQge1xuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vLi4vYXNzZXRzL2JnLXRvcC1yaWdodC5wbmcnKSBuby1yZXBlYXQgdG9wIGxlZnQ7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBoZWlnaHQ6IDE1MHZoO1xuICAgIHdpZHRoOiA1NSU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICByaWdodDogMDtcblxuICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgaGVpZ2h0OiA4NXZoO1xuICAgICAgICB3aWR0aDogOTglO1xuICAgIH1cbiAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDE1MDBweCkge1xuICAgICAgICBoZWlnaHQ6IDEzMHZoO1xuICAgIH1cbn1cbiJdfQ== */"
+module.exports = ".bg-top-right {\n  background: url('bg-top-right.png') no-repeat top left;\n  background-size: cover;\n  height: 140vh;\n  width: 54%;\n  position: absolute;\n  top: 0;\n  right: 0; }\n  @media only screen and (max-width: 768px) {\n    .bg-top-right {\n      height: 85vh;\n      width: 98%; } }\n  @media only screen and (min-width: 1500px) {\n    .bg-top-right {\n      height: 130vh; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9sYW5kaW5nL3RvcC9iZy10b3AvQzpcXFVzZXJzXFxCb3J5c1xcRG9jdW1lbnRzXFx3b3JrXFx0eW1kZXZcXHB1YmxpYy9zcmNcXGFwcFxcY29tcG9uZW50c1xcbGFuZGluZ1xcdG9wXFxiZy10b3BcXGJnLXRvcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHNEQUE0RTtFQUM1RSxzQkFBc0I7RUFDdEIsYUFBYTtFQUNiLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLFFBQVEsRUFBQTtFQUVSO0lBVEo7TUFVUSxZQUFZO01BQ1osVUFBVSxFQUFBLEVBS2pCO0VBSEc7SUFiSjtNQWNRLGFBQWEsRUFBQSxFQUVwQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbGFuZGluZy90b3AvYmctdG9wL2JnLXRvcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iZy10b3AtcmlnaHQge1xuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vLi4vYXNzZXRzL2JnLXRvcC1yaWdodC5wbmcnKSBuby1yZXBlYXQgdG9wIGxlZnQ7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBoZWlnaHQ6IDE0MHZoO1xuICAgIHdpZHRoOiA1NCU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICByaWdodDogMDtcblxuICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgaGVpZ2h0OiA4NXZoO1xuICAgICAgICB3aWR0aDogOTglO1xuICAgIH1cbiAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDE1MDBweCkge1xuICAgICAgICBoZWlnaHQ6IDEzMHZoO1xuICAgIH1cbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -882,7 +882,7 @@ var GreetingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"nav\">\r\n    <ul class=\"nav__list\">\r\n        <li>\r\n            <span (click)=\"scrollToElement('skills')\" i18n=\"skills\">umiejętności</span>\r\n        </li>\r\n        <li>\r\n            <span (click)=\"scrollToElement('portfolio')\">portfolio</span>\r\n        </li>\r\n        <li>\r\n            <span (click)=\"scrollToElement('contact')\" i18n=\"valuation\">Wycena</span>\r\n        </li>\r\n        <li>\r\n            <a routerLink=\"/blog\">blog</a>\r\n        </li>\r\n        <li>\r\n            <a href=\"http://tymdev.pl/admin\" i18n=\"for-clients\">dla klientów</a>\r\n        </li>\r\n    </ul>\r\n</nav>\r\n"
+module.exports = "<nav class=\"nav\">\n    <ul class=\"nav__list\">\n        <li>\n            <span (click)=\"scrollToElement('skills')\" i18n=\"skills\">umiejętności</span>\n        </li>\n        <li>\n            <span (click)=\"scrollToElement('portfolio')\">portfolio</span>\n        </li>\n        <li>\n            <span (click)=\"scrollToElement('contact')\" i18n=\"valuation\">Wycena</span>\n        </li>\n        <li>\n            <a routerLink=\"/blog\">blog</a>\n        </li>\n        <li>\n            <a href=\"https://admin.tymdev.pl/\" i18n=\"for-clients\" target=\"_blank\">dla klientów</a>\n        </li>\n    </ul>\n</nav>\n"
 
 /***/ }),
 
@@ -942,7 +942,7 @@ var LightNavComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"logo\">\r\n    <span class=\"logo__icon\"></span>\r\n    <h1 class=\"logo__header\">TymDev</h1>\r\n    <ul class=\"logo__social-list\">\r\n        <li>\r\n            <img src=\"../../../../../assets/icons/gh.png\" alt=\"GitHub\" class=\"logo__social-list-icon\">\r\n        </li>\r\n        <li>\r\n            <img src=\"../../../../../assets/icons/so.png\" alt=\"StackOverflow\" class=\"logo__social-list-icon logo__social-list-icon--so\">\r\n        </li>\r\n        <li>\r\n            <img src=\"../../../../../assets/icons/li.png\" alt=\"LinkedIn\" class=\"logo__social-list-icon\">\r\n        </li>\r\n    </ul>\r\n</section>\r\n"
+module.exports = "<section class=\"logo\">\n    <span class=\"logo__icon\"></span>\n    <h1 class=\"logo__header\">TymDev</h1>\n    <ul class=\"logo__social-list\">\n        <li>\n            <a href=\"https://github.com/d0peCode\" target=\"_blank\">\n                <img src=\"../../../../../assets/icons/gh.png\" alt=\"GitHub\" class=\"logo__social-list-icon\">\n            </a>\n        </li>\n        <li>\n            <a href=\"https://stackoverflow.com/users/8425145/dopecode\" target=\"_blank\">\n                <img src=\"../../../../../assets/icons/so.png\" alt=\"StackOverflow\" class=\"logo__social-list-icon logo__social-list-icon--so\">\n            </a>\n        </li>\n        <li>\n            <a href=\"https://www.linkedin.com/in/borys-tymi%C5%84ski-814916196/\" target=\"_blank\">\n                <img src=\"../../../../../assets/icons/li.png\" alt=\"LinkedIn\" class=\"logo__social-list-icon\">\n            </a>\n        </li>\n    </ul>\n</section>\n"
 
 /***/ }),
 

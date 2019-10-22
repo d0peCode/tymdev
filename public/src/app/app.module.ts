@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-
+import { PrismModule } from '@ngx-prism/core';
 import { AppComponent } from './components/app.component';
 
 // blog
-import { BlogComponent } from './components/blog/blog/blog.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 // light mode
 import { BgTopComponent } from './components/landing/top/bg-top/bg-top.component';
@@ -51,7 +51,8 @@ import { StoreService } from './services/store.service';
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        HttpClientModule
+        HttpClientModule,
+        PrismModule
     ],
     providers: [StoreService],
     bootstrap: [AppComponent]

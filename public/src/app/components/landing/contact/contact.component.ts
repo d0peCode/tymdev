@@ -7,9 +7,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-    private email: string;
-    private phone: string;
-    private message: string;
+    email: string;
+    phone: string;
+    message: string;
 
     constructor(private http: HttpClient) { }
 
