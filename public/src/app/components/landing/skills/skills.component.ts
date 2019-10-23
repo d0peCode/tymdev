@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
+import {StoreService} from '../../../services/store.service';
 
 @Component({
   selector: 'app-skills',
@@ -54,17 +55,11 @@ export class SkillsComponent implements OnInit {
 
     slidesPerView = 3;
 
-    constructor() {}
+    constructor(private storeService: StoreService) {}
 
     ngAfterViewInit() {
-        this.mySwiper = new Swiper('.skills__body', {
-            paginationClickable: false,
-            grabCursor: true,
-            loop: false,
-            slidesPerView: this.slidesPerView
-        });
+        this.initSwiper();
     }
-
     previousSlide() {
         this.mySwiper.slidePrev();
     }
@@ -78,12 +73,29 @@ export class SkillsComponent implements OnInit {
         if(window.innerWidth < 600) {
             this.slidesPerView = 1;
         }
-        if(this.mySwiper) this.mySwiper.reInit();
+        if(this.mySwiper) this.mySwiper.update();
     }
-
+    initSwiper() {
+      this.mySwiper = new Swiper('.skills__body', {
+        paginationClickable: false,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: this.slidesPerView
+      });
+    }
     ngOnInit() {
         this.handleSlidesAmount();
         window.addEventListener('resize', this.handleSlidesAmount);
+        this.storeService.bhsLang.subscribe(
+            (res) => {
+                if (res) {
+                    console.log('destroy swiper');
+                    this.mySwiper.destroy();
+                    setTimeout(() => { this.initSwiper() }, 20);
+                    this.storeService.setLangChanged(false);
+                }
+            }
+        );
     }
 
 }
