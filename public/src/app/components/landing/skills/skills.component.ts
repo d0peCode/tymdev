@@ -59,6 +59,8 @@ export class SkillsComponent implements OnInit {
 
     ngAfterViewInit() {
         this.initSwiper();
+        this.mySwiper.destroy();
+        setTimeout(() => { this.initSwiper(); }, 20);
     }
     previousSlide() {
         this.mySwiper.slidePrev();
@@ -76,12 +78,13 @@ export class SkillsComponent implements OnInit {
         if(this.mySwiper) this.mySwiper.update();
     }
     initSwiper() {
-      this.mySwiper = new Swiper('.skills__body', {
-        paginationClickable: false,
-        grabCursor: true,
-        loop: true,
-        slidesPerView: this.slidesPerView
-      });
+        this.mySwiper = new Swiper('.skills__body', {
+            autoplay: 3000,
+            paginationClickable: false,
+            grabCursor: true,
+            loop: true,
+            slidesPerView: this.slidesPerView
+        });
     }
     ngOnInit() {
         this.handleSlidesAmount();
@@ -91,7 +94,7 @@ export class SkillsComponent implements OnInit {
                 if (res) {
                     console.log('destroy swiper');
                     this.mySwiper.destroy();
-                    setTimeout(() => { this.initSwiper() }, 20);
+                    setTimeout(() => { this.initSwiper(); }, 20);
                     this.storeService.setLangChanged(false);
                 }
             }
