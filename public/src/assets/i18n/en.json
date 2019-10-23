@@ -16,5 +16,14 @@
   "quickmargo-text": "My most complicated project. It is bot which allow to fully automate bigest polish web online dynamic RPG game. Bot automate every sphere of game and it can be managed from mobile app. Entire project is splitted into three apps - mobile, desktop and web and backend which allow those apps to comunicate between. For this project I used technologies like NodeJS, Express, MongoDB, Puppeteer, Socket.io, Vue2JS, Electron, Ionic, Angular.",
   "adminpanel-text": "Admin panel is simple proprietary CMS which is meant to manage content at my web applications. It contains several most usefull features like adding, deleting, modyfing articles shown within app, clients databases, sending newsletters etc. To develop this project I used Vue2JS and PHP.",
   "screenrecorder-text": "Recording screen desktop application. It's developed with electron and AngularJS on renderer. It can save recorded video either to online cloud (and expose URL) and local directory. It uses cloudinary API in order to save file. Project is open source and its source code is available at GitHub.",
-  "colorreader-text": "Small application to pick color made with AngularJS. It shows different shades of current color. Colors can be saved to pallete which is saved in cache. You can convert colors to different formats - RGB, HEX, HSL."
+  "colorreader-text": "Small application to pick color made with AngularJS. It shows different shades of current color. Colors can be saved to pallete which is saved in cache. You can convert colors to different formats - RGB, HEX, HSL.",
+  "see": "See",
+  "contact-header": "Contact / Valuation",
+  "contact-text": "You're welcome to contact if you want to hire me or valuate your project.",
+  "email": "E-mail address",
+  "email-placeholder": "example@gmail.com",
+  "phone": "Phone number (optional)",
+  "message": "Message",
+  "message-placeholder": "Hey! We would like to have you in our team. Check out our job offer and join us!",
+  "send": "Send"
 }
