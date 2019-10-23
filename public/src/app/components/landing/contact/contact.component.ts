@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
     email: string;
     phone: string;
     message: string;
+    success: boolean;
 
     constructor(private http: HttpClient) { }
 
@@ -17,15 +18,16 @@ export class ContactComponent implements OnInit {
     }
 
     async sendMessage() {
-        const params = {
-            email: this.email,
-            phone: this.phone,
-            message: this.message
-        };
-        const response = await this.http.post('http://localhost:3000/api/message/add', params, {
-            headers: new HttpHeaders({
-                'Content-Type':  'application/json'
-            })
-        });
+        const params = new FormData();
+        params.append('email', this.email);
+        params.append('message', this.message);
+        params.append('phone', this.phone);
+        console.log('send msg', params);
+
+        this.http
+            .post('https://tymdev.pl/api/routes/sendMail.php', params)
+            .subscribe(() => {
+                this.success = true;
+            });
     }
 }

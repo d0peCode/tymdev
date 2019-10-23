@@ -11,10 +11,10 @@
         </header>
     </div>
     <div class="contact__col">
-        <form class="contact__form" (ngSubmit)="sendMessage()">
+        <form class="contact__form" (ngSubmit)="sendMessage()" ngNativeValidate>
             <div class="contact__input-box">
                 <label for="email" class="contact__input-label">{{ 'email' | translate }}</label>
-                <input type="email" id="email" class="contact__input-input" placeholder="{{ 'email-placeholder' | translate }}" [(ngModel)]="email" name="email" required>
+                <input type="email" id="email" class="contact__input-input" placeholder="{{ 'email-placeholder' | translate }}" [(ngModel)]="email" name="email" required="">
             </div>
             <div class="contact__input-box">
                 <label for="phone" class="contact__input-label">{{ 'phone' | translate }}</label>
@@ -22,12 +22,13 @@
             </div>
             <div class="contact__input-box">
                 <label for="message" class="contact__input-label">{{ 'message' | translate }}</label>
-                <textarea id="message" class="contact__input-textarea" placeholder="{{ 'message-placeholder' | translate }}" [(ngModel)]="message" name="message"></textarea>
+                <textarea id="message" class="contact__input-textarea" placeholder="{{ 'message-placeholder' | translate }}" [(ngModel)]="message" name="message" required></textarea>
             </div>
             <button type="submit" class="button button--primary">
                 <span class="button-text">{{ 'send' | translate }}</span>
                 <span class="button-icon button-icon--right">&#9660;</span>
             </button>
+            <p *ngIf="success" class="contact__header-paragraph">{{ 'send-text' | translate }}</p>
         </form>
     </div>
 </section>
