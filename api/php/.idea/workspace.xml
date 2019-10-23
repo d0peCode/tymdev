@@ -13,33 +13,33 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="1334" />
+    <option name="totalTimeSeconds" value="1602" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mailer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/mailer.php">
+      <file leaf-file-name="sendMail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/sendMail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="540">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mailer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/mailer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/pass.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sendMail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/sendMail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -50,8 +50,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/routes/sendMail.php" />
-        <option value="$PROJECT_DIR$/classes/mailer.php" />
         <option value="$PROJECT_DIR$/config/pass.php" />
+        <option value="$PROJECT_DIR$/classes/mailer.php" />
       </list>
     </option>
   </component>
@@ -67,7 +67,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1773" />
     <option name="y" value="90" />
     <option name="width" value="1382" />
@@ -121,12 +121,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571858728549</updated>
-      <workItem from="1571858729905" duration="1754000" />
+      <workItem from="1571858729905" duration="2022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1754000" />
+    <option name="totallyTimeSpent" value="2022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1773" y="90" width="1382" height="744" extended-state="0" />
@@ -160,17 +160,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/mailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/sendMail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="540">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -178,6 +171,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/mailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>

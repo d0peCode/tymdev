@@ -11,7 +11,7 @@ class Mailer {
         $mail->isSMTP();
         $mail->SMTPDebug = 2;
         $mail->Debugoutput = 'html';
-        $mail->Host = 'ncg.zenbox.pl';
+        $mail->Host = 'smtp.zenbox.pl';
         $mail->Port = 587;
         $mail->SMTPSecure = 'tls';
         $mail->CharSet = 'UTF-8';
@@ -26,6 +26,8 @@ class Mailer {
         );
 
         try {
+            $mail->setFrom('kontakt@tymdev.pl');
+            $mail->addAddress('kontakt@tymdev.pl');
             $mail->send();
             return true;
         } catch (Exception $e) {
