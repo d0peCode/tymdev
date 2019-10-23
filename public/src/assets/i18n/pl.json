@@ -1,5 +1,7 @@
 {
   "skillsInNav": "Umiejętności",
   "valuationInNav": "Wycena",
-  "clientsInNav": "Dla klientów"
+  "clientsInNav": "Dla klientów",
+  "greeting": "Miło Cię widzieć na mojej stronie! Zapraszam do przejrzenia moich prac oraz do współpracy.",
+  "projects": "Projekty"
 }
