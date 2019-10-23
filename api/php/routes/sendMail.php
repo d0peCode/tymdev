@@ -16,7 +16,7 @@ if(
     isset($_POST['message']) && !empty($_POST['message'])
 ) {
     include_once('../classes/mailer.php');
-    
+
     if(!isset($_POST['phone']) || empty($_POST['phone'])) {
         $phone = 'Nie podano.';
     } else {

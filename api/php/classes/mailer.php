@@ -5,15 +5,19 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 class Mailer {
     public function sendMail($clientMail, $phone, $message) {
+        include '../config/pass.php';
+
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->SMTPDebug = 2;
         $mail->Debugoutput = 'html';
-        $mail->Host = 'ncg.home.pl';
+        $mail->Host = 'ncg.zenbox.pl';
         $mail->Port = 587;
         $mail->SMTPSecure = 'tls';
         $mail->CharSet = 'UTF-8';
         $mail->SMTPAuth = true;
+        $mail->Username = 'kontakt@tymdev.pl';
+        $mail->Password = $emailPassword;
         $mail->Subject = 'Nowa wiadomość ze strony tymdev.pl!';
         $mail->msgHTML(
             'email klienta: ' . $clientMail . '<br>' .
