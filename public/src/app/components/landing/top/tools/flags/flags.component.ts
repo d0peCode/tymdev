@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-flags',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlagsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
+
+  currentLang = this.translate.currentLang;
+  setLang = lang => {
+    this.translate.use(lang);
+    this.currentLang = lang;
+  }
 
   ngOnInit() {
   }
-
 }

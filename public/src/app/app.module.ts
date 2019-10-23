@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { PrismModule } from '@ngx-prism/core';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { AppComponent } from './components/app.component';
 
 // blog
@@ -26,6 +28,11 @@ import { ModesComponent } from './components/landing/top/tools/modes/modes.compo
 
 // services
 import { StoreService } from './services/store.service';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
     declarations: [
@@ -52,7 +59,14 @@ import { StoreService } from './services/store.service';
         AppRoutingModule,
         FormsModule,
         HttpClientModule,
-        PrismModule
+        PrismModule,
+        TranslateModule.forRoot({
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          }
+        })
     ],
     providers: [StoreService],
     bootstrap: [AppComponent]

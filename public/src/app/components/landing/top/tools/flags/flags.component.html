@@ -1,4 +1,12 @@
 <div class="flags">
-    <img src="../../../../../../assets/icons/pl-flag.jpg" alt="Polish">
-    <img src="../../../../../../assets/icons/en-flag.jpg" alt="English">
+    <img src="../../../../../../assets/icons/pl-flag.jpg"
+         alt="Ustaw język polski"
+         class="flags__flag"
+         (click)="setLang('pl')"
+         [ngClass]="currentLang === 'pl' ? 'flags__selected' : ''">
+    <img src="../../../../../../assets/icons/en-flag.jpg"
+         alt="Set language to english"
+         class="flags__flag"
+         (click)="setLang('en')"
+         [ngClass]="currentLang === 'en' ? 'flags__selected' : ''">
 </div>

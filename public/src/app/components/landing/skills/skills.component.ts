@@ -13,10 +13,10 @@ export class SkillsComponent implements OnInit {
         {
             image: {
                 src:  '../../assets/icons/laptop.png',
-                alt: 'Responsive'
+                alt: 'responsiveness'
             },
-            header: 'Responsywność',
-            text: 'Każda strona i aplikacja, którą tworzę jest responsywna i dopasowuje się do każdego urządzenia.'
+            header: 'responsiveness',
+            text: 'responsiveness-text'
         },
         {
             image: {
@@ -24,7 +24,7 @@ export class SkillsComponent implements OnInit {
                 alt: 'Frontend/Backend'
             },
             header: 'Frontend/Backend',
-            text: 'W javascripcie znam zarówno technologie frontendowe jak i backendowe dzięki czemu jestem w stanie pracować nad wieloma rzeczami.'
+            text: 'fe-be-text'
         },
         {
             image: {
@@ -32,7 +32,7 @@ export class SkillsComponent implements OnInit {
                 alt: 'Search engine optimization'
             },
             header: 'SEO',
-            text: 'Dbam o semantykę HTMLa dzięki czemu aplikacje, które tworze są wstępnie przygotowane pod pozycjonowanie.'
+            text: 'seo-text'
         },
         {
             image: {
@@ -40,7 +40,7 @@ export class SkillsComponent implements OnInit {
                 alt: 'Javascript'
             },
             header: 'Javascript',
-            text: 'ES6+, Vue2JS, Ionic, Angular, AngularJS, Electron, NodeJS, ExpressJS'
+            text: 'ES6+, Vue2JS, AngularJS, Angular 2+, Electron, Ionic, NodeJS, ExpressJS, Jest, Puppeteer, Selenium, Quasar...'
         },
         {
             image: {
@@ -48,15 +48,7 @@ export class SkillsComponent implements OnInit {
                 alt: 'CSS'
             },
             header: 'CSS',
-            text: 'CSS3, SCSS, BEM, Bootstrap 3, Bootstrap 4, keyframes, animations'
-        },
-        {
-            image: {
-                src:  '../../assets/icons/seo.png',
-                alt: 'Search engine optimization'
-            },
-            header: 'HTML',
-            text: 'Dbam o semantykę HTMLa dzięki czemu aplikacje, które tworze są wstępnie przygotowane pod pozycjonowanie.'
+            text: 'CSS3, SCSS, BEM, Grid, Flexbox, Bootstrap 3 & 4 :('
         }
     ];
 

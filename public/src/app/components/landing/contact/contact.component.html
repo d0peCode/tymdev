@@ -1,8 +1,8 @@
 <section class="contact" id="contact">
     <div class="contact__col">
         <header class="contact__header">
-            <h2 class="heading heading--primary">Kontakt / Wycena</h2>
-            <p class="contact__header-paragraph">Zapraszam do kontaktu jeśli chcesz podjąć współpracę lub wycenić swój projekt.</p>
+            <h2 class="heading heading--primary">{{ 'contact-header' | translate }}</h2>
+            <p class="contact__header-paragraph">{{ 'contact-text' | translate }}</p>
             <div class="contact__links">
                 <a href="mailto:kontakt@tymdev.pl" target="_top">kontakt@tymdev.pl</a>
                 <a href="tel:123-456-7890">+48 795 691 258</a>
@@ -13,19 +13,19 @@
     <div class="contact__col">
         <form class="contact__form" (ngSubmit)="sendMessage()">
             <div class="contact__input-box">
-                <label for="email" class="contact__input-label">adres e-mail</label>
-                <input type="email" id="email" class="contact__input-input" placeholder="przyklad@gmail.com" [(ngModel)]="email" name="email" required="">
+                <label for="email" class="contact__input-label">{{ 'email' | translate }}</label>
+                <input type="email" id="email" class="contact__input-input" placeholder="{{ 'email-placeholder' | translate }}" [(ngModel)]="email" name="email" required>
             </div>
             <div class="contact__input-box">
-                <label for="phone" class="contact__input-label">numer telefonu (opcjonalne)</label>
+                <label for="phone" class="contact__input-label">{{ 'phone' | translate }}</label>
                 <input type="tel" id="phone" class="contact__input-input" placeholder="+48 795 691 258" [(ngModel)]="phone" name="phone">
             </div>
             <div class="contact__input-box">
-                <label for="message" class="contact__input-label">wiadomość</label>
-                <textarea id="message" class="contact__input-textarea" placeholder="Twoja wiadomość..." [(ngModel)]="message" name="message"></textarea>
+                <label for="message" class="contact__input-label">{{ 'message' | translate }}</label>
+                <textarea id="message" class="contact__input-textarea" placeholder="{{ 'message-placeholder' | translate }}" [(ngModel)]="message" name="message"></textarea>
             </div>
             <button type="submit" class="button button--primary">
-                <span class="button-text">Wyślij</span>
+                <span class="button-text">{{ 'send' | translate }}</span>
                 <span class="button-icon button-icon--right">&#9660;</span>
             </button>
         </form>
