@@ -1,19 +1,19 @@
 <nav class="nav">
     <ul class="nav__list">
         <li>
-            <span (click)="scrollToElement('skills')" i18n="skills">umiejętności</span>
+            <span (click)="scrollToElement('skills')">{{ 'skillsInNav' | translate }}</span>
         </li>
         <li>
             <span (click)="scrollToElement('portfolio')">portfolio</span>
         </li>
         <li>
-            <span (click)="scrollToElement('contact')" i18n="valuation">Wycena</span>
+            <span (click)="scrollToElement('contact')">{{ 'valuationInNav' | translate }}</span>
         </li>
         <li>
             <a routerLink="/blog">blog</a>
         </li>
         <li>
-            <a href="https://admin.tymdev.pl/" i18n="for-clients" target="_blank">dla klientów</a>
+            <a href="https://admin.tymdev.pl/" target="_blank">{{ 'clientsInNav' | translate }}</a>
         </li>
     </ul>
 </nav>
