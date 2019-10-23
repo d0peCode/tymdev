@@ -60,7 +60,7 @@ export class SkillsComponent implements OnInit {
         this.mySwiper = new Swiper('.skills__body', {
             paginationClickable: false,
             grabCursor: true,
-            loop: true,
+            loop: false,
             slidesPerView: this.slidesPerView
         });
     }

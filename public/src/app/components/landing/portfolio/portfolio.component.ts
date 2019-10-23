@@ -90,7 +90,7 @@ export class PortfolioComponent implements OnInit {
         this.mySwiper = new Swiper('.nav-light', {
             paginationClickable: false,
             grabCursor: true,
-            loop: true,
+            loop: false,
             slidesPerView: 1
         });
     }
