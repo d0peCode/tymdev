@@ -2,7 +2,7 @@
     <header class="portfolio__header">
         <div class="portfolio__header-container">
             <h2 class="heading heading--primary">Portfolio</h2>
-            <p class="portfolio__header-paragraph">Poniżej przedstawione są moje wybrane projekty. Niektóre projekty posiadają link do kodu na GitHubie jednakże większość z nich są projektami komercyjnymi, wykonanymi dla klientów dlatego nie mogę udostępnić ich kodu źródłowego. Przeciągnij aby przewinąć.</p>
+            <p class="portfolio__header-paragraph">{{ 'skills-intro' | translate }}</p>
         </div>
     </header>
     <section class="nav-light">
@@ -12,12 +12,12 @@
                 <div class="portfolio__content">
                     <h3 [attr.data-index]="'0' + i" class="heading heading--secondary">{{ item.name }}</h3>
                     <time class="portfolio__date"> {{ item.date }} </time>
-                    <p class="portfolio__content-paragraph">{{ item.description }}</p>
+                    <p class="portfolio__content-paragraph">{{ item.description | translate }}</p>
                     <div>
                         <img *ngFor="let n of item.icons" [src]="n" alt="" class="portfolio__content-icon">
                     </div>
                     <a *ngIf="item.live" [href]="item.link.live" target="_blank" class="button button--primary portfolio__button">
-                        <span class="button-text">Zobacz</span>
+                        <span class="button-text"> {{ 'see' | translate }}</span>
                         <span class="button-icon button-icon--right">&#9660;</span>
                     </a>
                     <a *ngIf="item.git" [href]="item.link.git" target="_blank" class="button button--primary portfolio__button">
