@@ -25,5 +25,7 @@
   "phone": "Phone number (optional)",
   "message": "Message",
   "message-placeholder": "Hey! We would like to have you in our team. Check out our job offer and join us!",
-  "send": "Send"
+  "send": "Send",
+  "company": "Ltd.",
+  "contact": "Contact"
 }

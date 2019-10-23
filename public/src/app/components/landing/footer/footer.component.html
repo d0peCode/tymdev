@@ -6,23 +6,23 @@
                 <span class="footer__logo">TymDev</span>
             </div>
             <div>
-                <span class="footer__text">2019 TymDev sp. z o. o. ®</span>
+                <span class="footer__text">2019 TymDev {{ 'company' | translate }} ®</span>
                 <span class="footer__text">all rights reserved ©</span>
             </div>
         </div>
         <div class="footer__col">
             <ul class="footer__list">
                 <li>
-                    <span (click)="scrollToElement('skills')">umiejętności</span>
+                    <span (click)="scrollToElement('skills')">{{ 'skillsInNav' | translate }}</span>
                 </li>
                 <li>
-                    <span (click)="scrollToElement('portfolio')">portfolio</span>
+                    <span (click)="scrollToElement('portfolio')">Portfolio</span>
                 </li>
                 <li>
-                    <span (click)="scrollToElement('contact')">kontakt</span>
+                    <span (click)="scrollToElement('contact')">{{ 'contact' | translate }}</span>
                 </li>
                 <li>
-                    <a href="http://tymdev.pl/admin">dla klientów</a>
+                    <a href="http://tymdev.pl/admin">{{ 'clientsInNav' | translate }}</a>
                 </li>
             </ul>
         </div>

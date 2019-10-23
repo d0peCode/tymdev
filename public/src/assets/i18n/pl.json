@@ -25,5 +25,7 @@
   "phone": "Number telefonu (opcjonalne)",
   "message": "Wiadomość",
   "message-placeholder": "Hej! Chcielibyśmy mieć Cie w naszym zespole. Sprawdź naszą ofertę pracy i dołącz do nas!",
-  "send": "Wyślij"
+  "send": "Wyślij",
+  "company": "sp. z o. o.",
+  "contact": "Kontakt"
 }
