@@ -64,4 +64,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
 
+  &__selected {
+    filter: brightness(2);
+  }
 }

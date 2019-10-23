@@ -1,8 +1,12 @@
 <div class="modes">
-    <img src="../../../../../../assets/icons/sun.png" alt="Light Mode">
+    <img src="../../../../../../assets/icons/sun.png"
+         alt="Light Mode"
+         [ngClass]="!mode ? 'modes__selected' : ''">
     <label class="switch">
         <input type="checkbox" [(ngModel)]="mode" (change)="modeChanged()">
         <span class="slider round"></span>
     </label>
-    <img src="../../../../../../assets/icons/moon.png" alt="Dark Mode">
+    <img src="../../../../../../assets/icons/moon.png"
+         alt="Dark Mode"
+         [ngClass]="mode ? 'modes__selected' : ''">
 </div>
