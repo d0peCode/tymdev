@@ -1,5 +1,2 @@
-node_modules/
-.env
 .idea
-.env
-.env-example
+pass.php
