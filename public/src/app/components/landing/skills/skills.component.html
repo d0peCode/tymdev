@@ -1,7 +1,7 @@
 <section class="skills" id="skills">
     <header class="skills__top">
-        <h2 class="heading heading--primary">Umiejętności</h2>
-        <p class="skills__top-paragraph">Tworzę aplikacje desktopowe, webowe oraz mobilne w JavaScript.
+        <h2 class="heading heading--primary" i18n="skills">Umiejętności</h2>
+        <p class="skills__top-paragraph" i18n="skills-text">Tworzę aplikacje desktopowe, webowe oraz mobilne w JavaScript.
 
             Zapraszam do kontaktu po więcej szczegółów na temat moich umiejętności technicznych.</p>
     </header>
@@ -18,7 +18,7 @@
                         <img [src]="item.image.src" [alt]="item.image.alt">
                     </div>
                     <div class="skills__body-box-header">
-                        <h3>{{ item.header }}</h3>
+                        <h3 i18n="@@skills-header">{{ item.header }}</h3>
                     </div>
                     <div class="skills__body-box-text">
                         <p>{{ item.text }}</p>

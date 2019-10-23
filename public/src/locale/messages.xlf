@@ -2,10 +2,35 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="59974daf975c76ea670b36328e6a5ac7408d42f4" datatype="html">
+        <source>Umiejętności</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/landing/skills/skills.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">skills</note>
+      </trans-unit>
+      <trans-unit id="6a4cea495af1f061bcacb08478ec9434dec98e1e" datatype="html">
+        <source>Tworzę aplikacje desktopowe, webowe oraz mobilne w JavaScript.
+
+            Zapraszam do kontaktu po więcej szczegółów na temat moich umiejętności technicznych.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/landing/skills/skills.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">skills-text</note>
+      </trans-unit>
+      <trans-unit id="skills-header" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ item.header }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/landing/skills/skills.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="66134eeecff99d9703d69bbf2a2a097075786183" datatype="html">
         <source>umiejętności</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/components/light-mode/top/light-nav/light-nav.component.html</context>
+          <context context-type="sourcefile">app/components/landing/top/light-nav/light-nav.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
         <note priority="1" from="description">skills</note>
@@ -13,7 +38,7 @@
       <trans-unit id="9c77fa80da1eacce908f31ee6507a7f0585c33ac" datatype="html">
         <source>Wycena</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/components/light-mode/top/light-nav/light-nav.component.html</context>
+          <context context-type="sourcefile">app/components/landing/top/light-nav/light-nav.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
         <note priority="1" from="description">valuation</note>
@@ -21,10 +46,28 @@
       <trans-unit id="75b8ce8e14a76a7ba6c4d4c5089a8a78fb7c6d4e" datatype="html">
         <source>dla klientów</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/components/light-mode/top/light-nav/light-nav.component.html</context>
+          <context context-type="sourcefile">app/components/landing/top/light-nav/light-nav.component.html</context>
           <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">for-clients</note>
+      </trans-unit>
+      <trans-unit id="432915df7084fd0478568d656d57cfa003fa8285" datatype="html">
+        <source>
+        Miło Cię widzieć na mojej stronie! Zapraszam do przejrzenia moich prac oraz do współpracy.
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/landing/top/greeting/greeting.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">greeting</note>
+      </trans-unit>
+      <trans-unit id="818e47010929d9673c41b61f63dfa7269ea47081" datatype="html">
+        <source>Projekty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/landing/top/greeting/greeting.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">projects</note>
       </trans-unit>
     </body>
   </file>
