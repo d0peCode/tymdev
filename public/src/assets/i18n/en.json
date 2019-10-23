@@ -3,5 +3,11 @@
   "valuationInNav": "Valuation",
   "clientsInNav": "For clients",
   "greeting": "I'm glad to see you at my site! You're welcome to take a look at my projects and contact.",
-  "projects": "Projects"
+  "projects": "Projects",
+  "skills": "Skills",
+  "skills-text": "I create desktop, web and mobile applications in javascript JavaScript. Feel free to contact me for any further informations.",
+  "responsiveness": "Responsiveness",
+  "responsiveness-text": "Every site and application that I make is fully responsive and it fits any device.",
+  "fe-be-text": "In Javascripcie I know either frontend and backend technologies so I can provide multiple different things.",
+  "seo-text": "I care about HTML semantics so application which I develop are initially ready for futher search engines optimization."
 }

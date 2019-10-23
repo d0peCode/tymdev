@@ -3,5 +3,11 @@
   "valuationInNav": "Wycena",
   "clientsInNav": "Dla klientów",
   "greeting": "Miło Cię widzieć na mojej stronie! Zapraszam do przejrzenia moich prac oraz do współpracy.",
-  "projects": "Projekty"
+  "projects": "Projekty",
+  "skills": "Umiejętności",
+  "skills-text": "Tworzę aplikacje desktopowe, webowe oraz mobilne w JavaScript.\n            Zapraszam do kontaktu po więcej szczegółów na temat moich umiejętności technicznych.",
+  "responsiveness": "Responsywność",
+  "responsiveness-text": "Każda strona i aplikacja, którą tworzę jest responsywna i dopasowuje się do każdego urządzenia.",
+  "fe-be-text": "W javascripcie znam zarówno technologie frontendowe jak i backendowe dzięki czemu jestem w stanie pracować nad wieloma rzeczami.",
+  "seo-text": "Dbam o semantykę HTMLa dzięki czemu aplikacje, które tworze są wstępnie przygotowane pod pozycjonowanie."
 }

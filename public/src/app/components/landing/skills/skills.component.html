@@ -1,9 +1,7 @@
 <section class="skills" id="skills">
     <header class="skills__top">
-        <h2 class="heading heading--primary" i18n="skills">Umiejętności</h2>
-        <p class="skills__top-paragraph" i18n="skills-text">Tworzę aplikacje desktopowe, webowe oraz mobilne w JavaScript.
-
-            Zapraszam do kontaktu po więcej szczegółów na temat moich umiejętności technicznych.</p>
+        <h2 class="heading heading--primary">{{ 'skills' | translate }}</h2>
+        <p class="skills__top-paragraph">{{ 'skills-text' | translate }}</p>
     </header>
     <div class="skills__body">
         <div class="swiper-wrapper">
@@ -18,10 +16,11 @@
                         <img [src]="item.image.src" [alt]="item.image.alt">
                     </div>
                     <div class="skills__body-box-header">
-                        <h3 i18n="@@skills-header">{{ item.header }}</h3>
+                        <h3 *ngIf="item.header === 'responsiveness'">{{ item.header | translate }}</h3>
+                        <h3 *ngIf="item.header !== 'responsiveness'">{{ item.header }}</h3>
                     </div>
                     <div class="skills__body-box-text">
-                        <p>{{ item.text }}</p>
+                        <p>{{ item.text | translate }}</p>
                     </div>
                 </div>
             </section>
