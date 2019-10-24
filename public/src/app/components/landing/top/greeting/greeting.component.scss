@@ -37,8 +37,11 @@
         width: 200px;
         height: 60px;
         font-size: 1.3rem;
-      }
 
+        & .button-icon {
+          height: calc(100% - 5px);
+        }
+      }
     }
   }
 }
